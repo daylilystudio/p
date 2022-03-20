@@ -88,8 +88,8 @@ var database = {
             text: `複合式商場-大魯閣草衙道APP介面設計`,
         },
         {
-            img: "img/works_lifePlus.jpg",
-            link: "works/lifePlus/",
+            img: "img/works_lifeplus.jpg",
+            link: "works/lifeplus/",
             title: "Life Plus",
             cat: "UI Design",
             text: `街友物資提供網站<br>介面設計`,
