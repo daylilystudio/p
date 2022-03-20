@@ -1,0 +1,5 @@
+<svg id="habit_video" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <circle id="Ellipse_32" data-name="Ellipse 32" cx="32" cy="32" r="32" fill="#e1cd8d"/>
+  <circle id="Ellipse_35" data-name="Ellipse 35" cx="20" cy="20" r="20" transform="translate(12 12)" fill="none" stroke="#9b414b" stroke-width="3.5"/>
+  <path id="Path_2797" data-name="Path 2797" d="M26.875,39.154a1.8,1.8,0,0,0,1.75,0l10.5-7.305a1.669,1.669,0,0,0,0-2.936l-10.5-7.305a1.8,1.8,0,0,0-1.75,0A1.686,1.686,0,0,0,26,23.076v14.61A1.686,1.686,0,0,0,26.875,39.154Z" transform="translate(1 1.619)" fill="#9b414b"/>
+</svg>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MingHsuan Portfolio</title>
+    <meta name="description" content="MingHsuan's resume" />
+    <meta property="og:description" content="MingHsuan's resume" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favorite.png">
+    <link href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    
+<nav>
+    <div class="logo"> </div>
+    <ul class="menu">
+        <li><a href="#about">ABOUT</a><div class="star_hover"></div></li>
+        <li><a href="#skill">SKILL</a><div class="star_hover"></div></li>
+        <li><a href="#works">WORKS</a><div class="star_hover"></div></li>
+        <li><a href="#contact">CONTACT</a><div class="star_hover"></div></li>
+    </ul>
+    <div class="top">↑</div>
+</nav>
+
+<div id="fullpage">
+
+    <!-- 區塊 1 -->
+    <div class="section">
+        <div class="container sectionHome">
+            <img src="img/MingHsuan.svg" alt="">
+            <h2>PORTFOLIO</h2>
+            <button id="btnGoDown"><span>↓</span></button>
+        </div>
+    </div>
+
+    <!-- 區塊 2 -->
+    <div class="section">
+        <div class="container sectionAbout">
+            <div>
+                <h2>About_</h2>
+                <p>
+                <span>Ming-Hsuan ( Lily ) , Taiwan</span> <br>
+                國高中皆就讀美術班，實踐媒傳所畢業，約 5 年前端 / UI 設計相關工作經驗。<br>
+                自小就對網頁很感興趣，自行經營過漫畫網站、個人網頁。工作後開始接觸網頁技術邏輯面，發現比起畫圖，對程式的專注力更好。相信繪畫、設計、前端會是我一生的志業。</p>
+                <p>
+                <img src="img/habit_draw.svg" title="Like illustration">
+                <img src="img/habit_hapkido.svg" title="Learn Martial art">
+                <!-- <img src="img/habit_dance.svg" title="Hip-hop Newbie"> -->
+                <img src="img/habit_video.svg" title="Like Dramas, Movie, Animate">
+                <img src="img/habit_cat.svg" title="Love Cat">
+                </p>
+                <span class="star01"></span>
+                <span class="star02"></span>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- 區塊 3 -->
+    <div class="section">
+        <div class="container sectionExperience" id="vueExperience">
+            <h2>
+                <img src="img/title_experience.svg" alt="">
+            </h2>
+            <div class="timeline">
+                <div v-for="(item,i) in data" class="timeline_frame">
+                    <p v-html="item.time"></p>
+                    <section>
+                        <h5>{{item.company}}</h5>
+                        <span v-html="item.title"></span>
+                    </section>
+                    <img src="img/icon_airplane.svg" alt="">
+                </div>
+                <div class="timeline_road"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 區塊 4 -->
+    <div class="section">
+        <div class="container sectionSkill" id="vueSkill">
+            <ul>
+                <li v-for="(list,i) in data">
+                    <img :src="list.img" alt="">
+                    <p>{{list.cat}}</p>
+                    <p>{{list.catM}}</p>
+                    <span v-html="list.text"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 區塊 5 -->
+    <div class="section">
+        <div class="container sectionWorks" id="vueWorks">
+            <ul>
+                <li v-for="(card,i) in data"
+                :style="{backgroundImage: 'url(' +card.img+ ')' }">
+                    <a :href="card.link" target="_blank">
+                        <div class="text_block">
+                            <h3>{{card.title}}</h3>
+                            <div>
+                                <p>{{card.cat}}</p>
+                                <span v-html="card.text"></span>
+                                <button>VIEW →</button>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mming.weebly.com/" target="_blank">MORE WORKS →</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 區塊 6 -->
+    <div class="section">
+        <div class="container sectionMsg" id="vueApp">
+            <img src="img/title_guest.svg" alt="">
+            <form>
+                <div class="msg msgName">
+                    <span>Name</span>
+                    <input v-model.trim="msgName"
+                    type="name" placeholder="enter your name">
+                </div>
+                <div class="msg msgText">
+                    <span>Msgg</span>
+                    <textarea v-model.trim="msgText" maxlength="52" rows="2"
+                    name="text" placeholder="leave a message! (limit 52 characters)"></textarea>
+                </div>
+                <div class="msg msgColor">
+                    <span>Color</span>
+                    <label class="checkContain">
+                        <input v-model="msgColor" type="radio" name="msgColor" id="msgColorRed" value="#9B414B" checked>
+                        <span style="background-color: #9B414B;" class="checkmark"></span>
+                    </label>
+                    <label class="checkContain">
+                        <input v-model="msgColor" type="radio" name="msgColor" id="msgColorYellow" value="#BE9F3C">
+                        <span style="background-color: #BE9F3C;" class="checkmark"></span>
+                    </label>
+                    <label class="checkContain">
+                        <input v-model="msgColor" type="radio" name="msgColor" id="msgColorBlue" value="#0E3150">
+                        <span style="background-color: #0E3150;" class="checkmark"></span>
+                    </label>
+                    <em>{{msgAlert}}</em>
+                </div>
+                <button @click.prevent="writeUserData()" class="msg msgSubmit">SEND</button>
+            </form>
+            <section>
+                <p>Total Message : {{msgData.length}}</p>
+                <div class="swiper msgSwiper">
+                    <ul class="swiper-wrapper">
+                        <template v-for="(card,i) in msgData">
+                            <li class="swiper-slide" :style="{backgroundColor: card.color}">
+                                <h5><img src="img/icon_user.svg" alt="">{{ card.name }}</h5>
+                                <hr>
+                                <p>{{ card.text }}</p>
+                                <span>… {{ card.date }}</span>
+                            </li>
+                        </template>
+                    </ul>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="section fp-auto-height footer">
+        <p>
+            <a href="https://github.com/daylilystudio" target="_blank"><img src="img/icon_github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/daylilystudio/" target="_blank"><img src="img/icon_linkedin.png" alt=""></a>
+        </p>
+        <p class="copyRight">Copyright © 2022 by Daylily&nbsp;</p>
+        <hr>
+        <p>This site uses : Vue.js、fullPage.js、Firebase Realtime Database、Swiper</p>
+    </div>
+
+</div>
+
+
+<!--JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
+<script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+<script src="js/fullpageScript.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.prod.js"></script>
+<script src="js/data.js"></script>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>

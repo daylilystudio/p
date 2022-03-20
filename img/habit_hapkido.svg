@@ -1,0 +1,12 @@
+<svg id="habit_hapkido" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <circle id="O" cx="32" cy="32" r="32" fill="#e1cd8d"/>
+  <g id="cloth" transform="translate(424.263 -479.25)">
+    <path id="Path_2811" data-name="Path 2811" d="M-403.27,524.342h6.412l15.991-29.644-3.4-5.448-10.434,18.71Z" transform="translate(0.61)" fill="#9b414b"/>
+    <rect id="Rectangle_326" data-name="Rectangle 326" width="16.506" height="5.448" transform="translate(-400.164 489.25)" fill="#9b414b"/>
+    <path id="Path_2812" data-name="Path 2812" d="M-394.63,507.96l-9.628-13.262,3.537-5.448,9.491,13.51Z" transform="translate(0.535)" fill="#9b414b"/>
+    <path id="Path_2813" data-name="Path 2813" d="M-404.258,503.149v24.814h23.126V503.149" transform="translate(0.535 1.061)" fill="none" stroke="#9b414b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <rect id="Rectangle_327" data-name="Rectangle 327" width="23.126" height="4.681" transform="translate(-403.723 524.342)" fill="#9b414b"/>
+    <path id="Path_2814" data-name="Path 2814" d="M-403.723,494.311s-7.54.977-7.54,8.151v19.231h3.519" transform="translate(0 0.386)" fill="none" stroke="#9b414b" stroke-linecap="square" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_2816" data-name="Path 2816" d="M-382.772,494.311s7.54.977,7.54,8.151v19.231h-3.519" transform="translate(2.176 0.386)" fill="none" stroke="#9b414b" stroke-linecap="square" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

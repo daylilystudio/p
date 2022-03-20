@@ -1,0 +1,9 @@
+<svg id="habit_draw" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <circle id="O" cx="32" cy="32" r="32" fill="#e1cd8d"/>
+  <g id="Outline" transform="translate(51.422 15.012) rotate(90)">
+    <path id="Path_2809" data-name="Path 2809" d="M626.655,362.38,651.3,337.734a2.8,2.8,0,0,0,0-3.942l-3.283-3.283a2.8,2.8,0,0,0-3.942,0L619.43,355.155,616.114,365.7Z" transform="translate(-617.114 -329.696)" fill="none" stroke="#9b414b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_179" data-name="Line 179" x2="7.225" y2="7.225" transform="translate(23.832 3.943)" fill="none" stroke="#9b414b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_2810" data-name="Path 2810" d="M624.664,397.561l3.116.831.536,2.82,2.853.569.72,3" transform="translate(-621.883 -372.566)" fill="none" stroke="#9b414b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <path id="pen" d="M30.182,41.993a34.526,34.526,0,0,0,8.672-6.281c7.934-7.267,17.751-19.3,14.234-22.352S32.732,27.814,32.732,27.814s-7.053,7.441-7.72,9.532a7.268,7.268,0,0,0-2.227.126,7.71,7.71,0,0,0-4.029,2.211,9,9,0,0,0-2,3.594c-.806,2.5-1.581,5.64-4.755,7.874,2.365,2.51,10.927,1.15,14.8-2.022A8.492,8.492,0,0,0,30.182,41.993Z" transform="matrix(1, -0.017, 0.017, 1, -1.962, -0.075)" fill="#9b414b" stroke="#e1cd8d" stroke-width="2.5"/>
+</svg>
